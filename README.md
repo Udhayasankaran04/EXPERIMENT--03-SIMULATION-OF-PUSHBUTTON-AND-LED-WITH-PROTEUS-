@@ -165,19 +165,9 @@ UDHAYA SANKARAN M
 
 
 ## Output screen shots of proteus  :
+![image](https://github.com/Udhayasankaran04/EXPERIMENT--03-SIMULATION-OF-PUSHBUTTON-AND-LED-WITH-PROTEUS-/assets/119393933/4c9a351a-b6a5-4376-ad8f-b7f5baaa93ab)
 ![OUTPUT SR PROTEUS](https://user-images.githubusercontent.com/119393933/235109142-2c55c605-0cdd-4532-93fe-856ed02b4107.jpg)
 
-
-
-
-
-## Proteus layout(Add pdf screen shot of circuit here)
-![PROTEUS](https://user-images.githubusercontent.com/119393933/235109409-3c2816d3-6196-4884-bec8-1f4b607ac32d.jpg)
-
-
- 
- 
- 
  
 ## Result :
 Interfacing a digital output and digital input  with ARM microcontroller are simulated in proteus and the results are verified.
