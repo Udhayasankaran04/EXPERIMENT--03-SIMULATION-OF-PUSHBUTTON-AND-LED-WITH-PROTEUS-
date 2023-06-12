@@ -167,6 +167,7 @@ UDHAYA SANKARAN M
 ## Output screen shots of proteus  :
 ![image](https://github.com/Udhayasankaran04/EXPERIMENT--03-SIMULATION-OF-PUSHBUTTON-AND-LED-WITH-PROTEUS-/assets/119393933/4c9a351a-b6a5-4376-ad8f-b7f5baaa93ab)
 ![OUTPUT SR PROTEUS](https://user-images.githubusercontent.com/119393933/235109142-2c55c605-0cdd-4532-93fe-856ed02b4107.jpg)
+![image](https://github.com/Udhayasankaran04/EXPERIMENT--03-SIMULATION-OF-PUSHBUTTON-AND-LED-WITH-PROTEUS-/assets/119393933/570062ae-1613-4686-904b-d05bcb6a6345)
 
  
 ## Result :
