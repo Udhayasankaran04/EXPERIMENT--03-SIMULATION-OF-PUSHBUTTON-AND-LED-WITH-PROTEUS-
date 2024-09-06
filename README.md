@@ -90,7 +90,7 @@ int main(void)
 }
 void push_button()
 {
-	button_status = HAL_GPIO_ReadPin(GPIOB, GPIO_PIN_0);
+	button_status = HAL_GPIO_ReadPin(GPIOC, GPIO_PIN_13);
 	if (button_status == 0)
 	{
 		HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, GPIO_PIN_SET);
@@ -128,19 +128,16 @@ void SystemClock_Config(void)
 }
 static void MX_GPIO_Init(void)
 {
-  GPIO_InitTypeDef GPIO_InitStruct = {0};
-  __HAL_RCC_GPIOA_CLK_ENABLE();
-  __HAL_RCC_GPIOB_CLK_ENABLE();
-  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, GPIO_PIN_RESET);
+  GPIO_InitStruct.Pin = GPIO_PIN_13;
+  GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
+  GPIO_InitStruct.Pull = GPIO_PULLUP;
+  HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);
+
   GPIO_InitStruct.Pin = GPIO_PIN_5;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
-  GPIO_InitStruct.Pin = GPIO_PIN_0;
-  GPIO_InitStruct.Mode = GPIO_MODE_INPUT;
-  GPIO_InitStruct.Pull = GPIO_PULLUP;
-  HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
 
 }
 void Error_Handler(void)
@@ -165,11 +162,17 @@ UDHAYA SANKARAN M
 
 
 ## Output screen shots of proteus  :
-![image](https://github.com/Udhayasankaran04/EXPERIMENT--03-SIMULATION-OF-PUSHBUTTON-AND-LED-WITH-PROTEUS-/assets/119393933/4c9a351a-b6a5-4376-ad8f-b7f5baaa93ab)
-![OUTPUT SR PROTEUS](https://user-images.githubusercontent.com/119393933/235109142-2c55c605-0cdd-4532-93fe-856ed02b4107.jpg)
-![image](https://github.com/Udhayasankaran04/EXPERIMENT--03-SIMULATION-OF-PUSHBUTTON-AND-LED-WITH-PROTEUS-/assets/119393933/570062ae-1613-4686-904b-d05bcb6a6345)
+### OFF: 
+![WhatsApp Image 2024-09-05 at 09 29 44_437af358](https://github.com/user-attachments/assets/c50352ed-d72e-473e-9459-ec41d3506585)
 
- 
+### ON:
+![WhatsApp Image 2024-09-05 at 09 30 00_d5656658](https://github.com/user-attachments/assets/59d09538-7db5-4351-9b30-bbf8d7074c25)
+
+### LAYOUT:
+![Screenshot 2024-09-06 at 14-43-37 PMC-EXP1 PDF](https://github.com/user-attachments/assets/77f18c58-c696-4485-adac-8d2bc1e63fb7)
+
+
+
 ## Result :
 Interfacing a digital output and digital input  with ARM microcontroller are simulated in proteus and the results are verified.
 
